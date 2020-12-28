@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(51, 51, 255);
+  font-size: 1.3em;
+  line-height: 1.5em;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+#main-header {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(102, 102, 255);
+}
+
+#navbar {
+  box-sizing: border-box;
+  text-align: left;
+  margin: 1em;
+  
+}
+
+#navbar h3 {
+  margin-left: 1.5em;
+  padding: 0.5em 0;
+  background: rgb(153, 153, 255);
+  text-align: center;
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  height: 40vh;
+  overflow: auto;
+
+}
+
+#navbar ul li {
+  border: 3px outset grey;
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+#navbar li:nth-child(odd) {
+  background: white;
+}
+
+#navbar li:nth-child(even) {
+  background: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 1em 0;
+}
+
+a:hover {
+  color:rgb(102, 0, 102);
+}
+
+h1,h2 {
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+header p {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+pre {
+  background-color: whitesmoke;
+  text-align: left;
+  overflow-x: scroll;
+  margin: 0.2em 2em;
+  
+}
+
+#main-doc {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em 1em;
+}
+
+.main-section {
+ box-sizing: border-box;
+ padding: 1em;
+}
+
+.main-section:nth-child(odd) {
+  background:rgb(179, 179, 255);
+}
+
+.main-section:nth-child(even) {
+  background: rgb(204, 204, 255);
+}
+
+footer {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 1em 0.5em;
+}
+
+button {
+  font-weight: bold;
+  font-size: 1.3em;
+  text-align: center;
+  border-radius: 50px;
+  border-color: transparent;
+  background-color:rgb(15, 15, 247);
+  padding: 0.5em 1em;
+  width: 70vw;
+}
+
+a:focus, a:visited {
+  color: black;
+}
+
+@media (min-width: 800px) {
+  #main-header {
+    overflow: hidden;
+  }
+
+  .center {
+    width: 77vw;
+    margin-left: 18vw;
+    text-align: center;
+  }
+  
+  #navbar {
+    background: rgb(51, 51, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20vw;
+    height: 100vh;
+    padding: 0.5em 0 ;
+    margin: 0;
+    border-right: 5px inset gray;
+  }
+
+  #navbar h3 {
+    margin: 0;
+  }
+
+  #navbar ul {
+    width: 100%;
+    height: 90vh;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  #navbar a:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  #main-doc {
+    width: 77vw;
+    margin-left: 18vw;
+
+  }
+
+  .main-section {
+    box-sizing: border-box;
+    width: 80vw;
+  
+  }
+
+  footer h2,p {
+    text-align: left;
+  }
+}

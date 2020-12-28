@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tecnical Detail Page</title>
+</head>
+
+<body>
+  <header id="main-header">
+    <nav id="navbar">
+      <header>
+        <h3>Basic HTML</h3>
+      </header>
+      <ul>
+        <li>
+          <a href="#html_introduction" class="nav-link">
+            HTML Introduction
+          </a>
+        </li>
+        <li>
+          <a href="#html_elements" class="nav-link">
+            HTML Elements
+          </a>
+        </li>
+        <li>
+          <a href="#html_attributes" class="nav-link">
+            HTML Attributes
+          </a>
+        </li>
+        <li>
+          <a href="#html_headings" class="nav-link">
+            HTML Headings
+          </a>
+        </li>
+        <li>
+          <a href="#html_paragraphs" class="nav-link">
+            HTML Paragraphs
+          </a>
+        </li>
+        <li>
+          <a href="#html_comments" class="nav-link">
+            HTML Comments
+          </a>
+        </li>
+        <li>
+          <a href="#html_images" class="nav-link">
+            HTML Images
+          </a>
+        </li>
+        <li>
+          <a href="#html_tables" class="nav-link">
+            HTML Tables
+          </a>
+        </li>
+        <li>
+          <a href="#html_lists" class="nav-link">
+            HTML Lists
+          </a>
+        </li>
+        <li>
+          <a href="#html_iframes" class="nav-link">
+            HTML Iframes
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="center">
+      BASIC HTML
+    </h1>
+    <p class="center">Let us introduce you HTML, coding language for every web page skeleton!</p>
+  </header>
+  <main id="main-doc">
+    <section class="main-section" id="html_introduction">
+      <header>
+        <h2>HTML Introduction</h2>
+      </header>
+      <p>
+        HTML is the standard markup language for creating Web pages.
+        <br>
+      <h3>What is HTML?</h3>
+      <ul>
+        <li>HTML stands for Hyper Text Markup Language</li>
+        <li>HTML is the standard markup language for creating Web pages</li>
+        <li>HTML describes the structure of a Web page</li>
+        <li>HTML consists of a series of elements</li>
+        <li>HTML elements tell the browser how to display the content</li>
+        <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link",
+          etc.</li>
+      </ul>
+      </p>
+      <p>
+      <h3>Simple HTML document</h3>
+      <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;title&gt; My First page&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt; 
+        &lt;h1&gt; My First heading&lt;/h1&gt;
+      
+        &lt;p&gt; My First paragraph&lt;/p&gt;
+      
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </pre>
+      <h3>Example Explained</h3>
+      <ul>
+        <li>The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document</li>
+        <li>The &lt;html&gt; element is the root element of an HTML page</li>
+        <li>The &lt;head&gt; element contains meta information about the HTML page</li>
+        <li>The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or
+          in the page's tab)</li>
+        <li>The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such
+          as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+        <li>The &lt;h1&gt; element defines a large heading</li>
+        <li>The &lt;p&gt; element defines a paragraph</li>
+      </ul>
+      </p>
+    </section>
+    <section class="main-section" id="html_elements">
+      <header>
+        <h2>HTML Elements</h2>
+      </header>
+      <p>
+        An HTML element is defined by a start tag, some content, and an end tag:
+      <pre> &lt;tagname&gt;Content goes here... &lt;tagname&gt;
+        </pre>
+      The HTML element is everything from the start tag to the end tag.
+      Examples:
+      <pre>
+        &lt;h1&gt; My First heading&lt;/h1&gt;
+        &lt;p&gt; My First paragraph&lt;/p&gt;</pre>
+      </p>
+      <p>
+        Some HTML elements don't have content, these are called <strong><em>empty elements</em></strong>. Empty elements
+        don't have end tag, they are also called self-closing tags. Example:
+      <pre>&lt;br&gt;, &lt;hr&gt;, &lt;img&gt;</pre>
+      </p>
+    </section>
+    <section class="main-section" id="html_attributes">
+      <header>
+        <h2>HTML Attributes</h2>
+      </header>
+      <p>
+        HTML attributes provide additional information about HTML elements.
+      <ul>
+        <li>All HTML elements can have attributes</li>
+        <li>Attributes provide additional information about elements</li>
+        <li>Attributes are always specified in the start tag</li>
+        <li>Attributes usually come in name/value pairs like: <strong><em>name="value"</em> </strong></li>
+      </ul>
+      </p>
+      <p>
+      <h3>Atributes href and src</h3>
+      <section>
+        The &lt;a&gt; tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to.
+        <br>
+        <pre>&lt;a href="https://www.w3schools.com" &gt;Visit W3Schools&lt;/a&gt;</pre>
+      </section>
+      <section>
+        The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies the path to the image
+        to be
+        displayed
+        <br>
+        <pre>&lt;img src="img_girl.jpg"&gt;</pre>
+      </section>
+      <section>
+        <p>
+          There are two ways to specify the URL in the src attribute:
+        </p>
+        <ol>
+          <li><strong>Absolute URL</strong> - Links to an external image that is hosted on another website. Example:
+            <pre>src="https://www.w3schools.com/images/img_girl.jpg"</pre>
+          </li>
+          <li><strong>Relative URL</strong> - Links to an image that is hosted within the website. Here, the URL does
+            not include the domain name. If the URL begins without a slash, it will be relative to the current page.
+            Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example:
+            src="/images/img_girl.jpg".</li>
+        </ol>
+      </section>
+      </p>
+    </section>
+    <section class="main-section" id="html_headings">
+      <header>
+        <h2>HTML Headings</h2>
+      </header>
+      <p>HTML headings are titles or subtitles that you want to display on a webpage.
+      </p>
+      <p>
+        HTML headings are defined with the <span>&lt;h1&gt; to &lt;h6&gt; tags.</span>
+        <br>
+        <strong>&lt;h1&gt;</strong> defines the most important heading. <strong>&lt;h6&gt;</strong> defines the least
+        important heading.
+        <br>
+      <pre>
+        &lt;h1&gt;Heading 1&lt;/h1&gt;
+        &lt;h2&gt;Heading 2&lt;/h2&gt;
+        &lt;h3&gt;Heading 3&lt;/h3&gt;
+        &lt;h4&gt;Heading 4&lt;/h4&gt;
+        &lt;h5&gt;Heading 5&lt;/h5&gt;
+        &lt;h6&gt;Heading 6&lt;/h6&gt;</pre>
+
+      <h3>Headings Are Important</h3>
+
+      Search engines use the headings to index the structure and content of your web pages.
+      Users often skim a page by its headings. It is important to use headings to show the document structure.
+      </p>
+    </section>
+    <section class="main-section" id="html_paragraphs">
+      <header>
+        <h2>HTML Paragraphs</h2>
+      </header>
+      <p>
+        The HTML &lt;p&gt; element defines a paragraph.
+        <br>
+        A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and
+        after a paragraph.
+      </p>
+      <p>
+        You cannot be sure how HTML will be displayed.
+
+        Large or small screens, and resized windows will create different results.
+
+        With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.
+
+        The browser will automatically remove any extra spaces and lines when the page is displayed
+        <br>
+      <pre>
+        &lt;p&gt;
+          This paragraph
+          contains a lot of lines
+          in the source code,
+          but the browser
+          ignores it.
+        &lt;/p&gt;
+          
+        &lt;p&gt;
+          This paragraph
+          contains         a lot of spaces
+          in the source         code,
+          but the        browser
+          ignores it.
+        &lt;/p&gt;</pre>
+      </p>
+    </section>
+    <section class="main-section" id="html_comments">
+      <header>
+        <h2>HTML Comments</h2>
+      </header>
+      <p>
+        HTML comments are not displayed in the browser, but they can help document your HTML source code. You can add
+        comments to your HTML source by using the following syntax:
+        <br>
+      <pre>&lt;!-- Write your comments here --&gt;</pre>
+
+      Notice that there is an exclamation point (!) in the start tag, but not in the end tag.
+      <br>
+      Comments are usefull for:
+      <ul>
+        <li>Debugging</li>
+        <li>Descriptions for someone else that could be working on same code as you</li>
+      </ul>
+      Example:
+      <br>
+      <pre>
+  &lt;!-- This is a comment --&gt;
+
+  &lt;p&gt; This is paragraph&lt;/p&gt;
+
+  &lt;!-- Remember to add more information here  --&gt;
+
+  &lt;!-- Do not display this image at the moment
+  &lt;img border="0" src="pic_trulli.jpg" alt="Trulli"&gt;  --&gt;
+  </pre>
+      </p>
+    </section>
+    <section class="main-section" id="html_images">
+      <header>
+        <h2>HTML Images</h2>
+      </header>
+      <p>
+        Images can improve the design and the appearance of a web page.
+        <br>
+      <h3>HTML Images Syntax</h3>
+
+      The HTML &lt;img&gt; tag is used to embed an image in a web page.
+      <br>
+      Images are not technically inserted into a web page; images are linked to web pages. The &lt;img&gt; tag creates a
+      holding space for the referenced image.
+      <br>
+      The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.
+      <br>
+      The &lt;img&gt; tag has two required attributes:
+      <br>
+      src - Specifies the path to the image
+      alt - Specifies an alternate text for the image
+      <pre>
+        &lt;img src="url" alt="alternatetext"&gt;</pre>
+      </p>
+    </section>
+    <section class="main-section" id="html_tables">
+      <header>
+        <h2>HTML Tables</h2>
+      </header>
+      <p>
+        HTML tables allow web developers to arrange data into rows and columns.
+        <br>
+      <h3>Define an HTML Table</h3>
+
+      The &lt;table&gt; tag defines an HTML table.
+      <br>
+      Each table row is defined with a &lt;tr&gt; tag. Each table header is defined with a &lt;th&gt; tag. Each table
+      data/cell is defined with a &lt;td&gt; tag.
+      <br>
+      By default, the text in &lt;th&gt; elements are bold and centered.
+
+      By default, the text in &lt;td&gt; elements are regular and left-aligned.
+      <pre>
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Firstname&lt;/th&gt;
+          &lt;th&gt;Lastname&lt;/th&gt;
+          &lt;th&gt;Age&lt;/th&gt;
+        &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Jill&lt;/td&gt;
+            &lt;td&gt;Smith&lt;/td&gt;
+            &lt;td&gt;50&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Eve&lt;/td&gt;
+            &lt;td&gt;Jackson&lt;/td&gt;
+            &lt;td&gt;94&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;</pre>
+      </p>
+    </section>
+    <section class="main-section" id="html_lists">
+      <header>
+        <h2>HTML Lists</h2>
+      </header>
+      <p>
+        HTML lists allow web developers to group a set of related items in lists.
+      <section>
+        <h3>Unordered HTML List</h3>
+
+        An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag.
+
+        The list items will be marked with bullets (small black circles) by default:
+        <pre>
+          &lt;ul&gt;
+          &lt;li&gt;Coffee&lt;/li&gt;
+          &lt;li&gt;Tea&lt;/li&gt;
+          &lt;li&gt;Milk&lt;/li&gt;
+          &lt;/ul&gt;</pre>
+      </section>
+      <section>
+
+        <h3>Ordered HTML List</h3>
+
+        An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag.
+
+        The list items will be marked with numbers by default:
+        <pre>
+          &lt;ol&gt;
+          &lt;li&gt;Coffee&lt;/li&gt;
+          &lt;li&gt;Tea&lt;/li&gt;
+          &lt;li&gt;Milk&lt;/li&gt;
+          &lt;/ol&gt;</pre>
+      </section>
+
+      <section>
+
+        <h3>HTML Description Lists</h3>
+
+        HTML also supports description lists.
+
+        A description list is a list of terms, with a description of each term.
+
+        The &lt;dl&gt; tag defines the description list, the &lt;dt&gt; tag defines the term (name), and the &lt;dd&gt;
+        tag describes each term:
+        <pre>
+          &lt;dl&gt;
+          &lt;dt&gt;Coffee&lt;/dt&gt;
+          &lt;dd&gt;Black hot drink&lt;/dd&gt;
+          &lt;dt&gt;Milk&lt;/dt&gt;
+          &lt;dd&gt;White cold drink&lt;/dd&gt;
+          &lt;/dl&gt;</pre>
+      </section>
+      <section class="main-section" id="html_iframes">
+        <header>
+          <h2>HTML Iframes</h2>
+        </header>
+        <p>
+          An HTML iframe is used to display a web page within a web page.
+        </p>
+        <p>
+        <h3>HTML Iframe Syntax</h3>
+
+        The HTML &lt;iframe&gt; tag specifies an inline frame.
+
+        An inline frame is used to embed another document within the current HTML document.
+        <pre>
+        &lt;iframe src="url" title="description"&gt;</pre>
+        </p>
+      </section>
+      <footer>
+
+        <button><a href="#main-header">Back to the top!</a></button>
+
+        <section>
+          <h2>Reference</h2>
+          <p>
+            All the documentation in this page is taken from <a href="https://www.w3schools.com/html" target="_blank">
+              W3Schools Online</a>.
+          </p>
+        </section>
+      </footer>
+  </main>
+</body>
+
+</html>
