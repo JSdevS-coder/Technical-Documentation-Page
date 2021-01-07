@@ -173,6 +173,7 @@ a:focus, a:visited {
 
   #navbar h3 {
     margin: 0;
+    padding: 0.5em 0;
   }
 
   #navbar ul {
@@ -180,14 +181,15 @@ a:focus, a:visited {
     height: 90vh;
     overflow-y: auto;
     margin: 0;
-    padding: 0;
+    padding: 0.3em 0;
   }
 
 #navbar ul li {
   margin: 0.5em 0;
   padding: 0.5em 0;
   text-align: center;
-
+  }
+    
   #navbar a:hover {
     color: red;
     cursor: pointer;
