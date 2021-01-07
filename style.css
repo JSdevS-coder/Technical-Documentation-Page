@@ -77,7 +77,7 @@ h1,h2 {
 
 .center1 {
   position: static;
-  margin-top: 30vh !important;
+  margin-top: 30vh;
   
 }
 
@@ -147,7 +147,7 @@ a:focus, a:visited {
   }
   
   .center1 {
-    margin-top:0 !important;
+    margin-top:0;
      width: 77vw;
     margin-left: 18vw;
     text-align: center;
