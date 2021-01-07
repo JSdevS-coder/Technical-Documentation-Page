@@ -143,7 +143,14 @@ a:focus, a:visited {
 @media (min-width: 800px) {
   #main-header {
     overflow: hidden;
+    margin-top: 0;
   }
+  
+  .center1 {
+    margin-top:0;
+     width: 77vw;
+    margin-left: 18vw;
+    text-align: center;
 
   .center {
     width: 77vw;
@@ -176,7 +183,10 @@ a:focus, a:visited {
     padding: 0;
   }
 
-
+#navbar ul li {
+  margin: 0.3em 0;
+  padding: 0.5em 0;
+  text-align: center;
 
   #navbar a:hover {
     color: red;
