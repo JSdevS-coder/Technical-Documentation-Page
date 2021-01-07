@@ -147,7 +147,7 @@ a:focus, a:visited {
   }
   
   .center1 {
-    margin-top:0;
+    margin-top:0 !important;
      width: 77vw;
     margin-left: 18vw;
     text-align: center;
@@ -185,7 +185,7 @@ a:focus, a:visited {
   }
 
 #navbar ul li {
-  margin: 0.5em 0;
+  margin: 1em 0;
   padding: 0.5em 0;
   text-align: center;
   }
