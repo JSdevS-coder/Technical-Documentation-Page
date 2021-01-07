@@ -8,6 +8,7 @@ body {
   line-height: 1.5em;
   font-family: 'Times New Roman', Times, serif;
   box-sizing: border-box;
+  overlow-x: hidden;
 }
 
 #main-header {
